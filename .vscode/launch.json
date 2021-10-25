@@ -4,15 +4,14 @@
     // 詳細情報は次を確認してください: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
         {
             "name": "(Windows) 起動",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceRoot}/build/Debug/helloworld-cmake.exe",
             "args": [],
-            "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "console": "integratedTerminal"
         },

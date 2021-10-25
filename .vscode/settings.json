@@ -1,3 +1,14 @@
 {
-    "cmake.cmakePath": "C:/msys64/mingw64/bin/cmake"
+    "cmake.cmakePath": "C:/msys64/mingw64/bin/cmake",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "[c]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "git.autofetch": true,
+    "astyle-format.path": "C:\\msys64\\mingw64\\bin\\astyle.exe",
+    "astyle-format.args": " --mode=c --style=ansi -t2 -C -S -K -Y",
+    "files.associations": {
+        "vector": "cpp",
+        "iostream": "cpp"
+    }
 }
