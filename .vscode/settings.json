@@ -1,5 +1,5 @@
 {
-    "cmake.cmakePath": "C:/msys64/mingw64/bin/cmake",
+    "cmake.cmakePath": "cmake",  //   "C:/msys64/mingw64/bin/cmake",
     "C_Cpp.clang_format_fallbackStyle": "Google",
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
