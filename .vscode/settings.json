@@ -9,6 +9,23 @@
     "astyle-format.args": " --mode=c --style=ansi -t2 -C -S -K -Y",
     "files.associations": {
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp",
+        "chrono": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "forward_list": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "hash_map": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "string_view": "cpp",
+        "slist": "cpp"
     }
 }
