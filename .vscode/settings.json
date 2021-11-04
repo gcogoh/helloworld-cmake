@@ -1,5 +1,5 @@
 {
-    "cmake.cmakePath": "C:/msys64/mingw64/bin/cmake",
+    "cmake.cmakePath": "cmake",  //   "C:/msys64/mingw64/bin/cmake",
     "C_Cpp.clang_format_fallbackStyle": "Google",
     "[c]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
@@ -9,6 +9,23 @@
     "astyle-format.args": " --mode=c --style=ansi -t2 -C -S -K -Y",
     "files.associations": {
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "array": "cpp",
+        "chrono": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "forward_list": "cpp",
+        "initializer_list": "cpp",
+        "list": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "hash_map": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "string_view": "cpp",
+        "slist": "cpp"
     }
 }
