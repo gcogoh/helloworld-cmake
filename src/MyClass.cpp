@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <boost/range/adaptor/indexed.hpp>	// index(), value()
+#include <boost/assign.hpp>					//  +=  instead of push_bak()
 #include "MyClass.h"
 
 using namespace std;
@@ -13,7 +15,9 @@ Object::~Object()
 
 void Object::AddString(string vs)
 {
-	m_VectorOfString.push_back(vs);
+	//#include <boost/assign.hpp>
+	using namespace boost::assign;
+	m_VectorOfString += vs;
 }
 
 vector<string> Object::GetCopyOfVector()
@@ -24,13 +28,10 @@ vector<string> Object::GetCopyOfVector()
 void Object::DisplayVectorContents()
 {
 	//#include <boost/range/adaptor/indexed.hpp>
-	//for (auto word : m_VectorOfString)
-	//{
-	//	cout << "Element[" << word.index() << "] = << word << endl;
-	//}
-	for (unsigned int i = 0; i < m_VectorOfString.size(); i++)
+	using namespace boost::adaptors;
+	for (const auto&& word : m_VectorOfString | indexed())
 	{
-		cout << "Element[" << i << "] = " << m_VectorOfString[i] << endl;
+		cout << "Element[" << word.index() << "] =" << word.value() << endl;
 	}
 	cout << endl;
 }
